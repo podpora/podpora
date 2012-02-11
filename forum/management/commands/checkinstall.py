@@ -77,7 +77,7 @@ class Command(NoArgsCommand):
         print "\n\nChecking important settings:"
 
         if not re.match('^https?:\/\/\w+', settings.APP_URL):
-            print " Your APP_URL does not seem to be a valid url. Please fill this setting with the URL of your OSQA installation"
+            print " Your APP_URL does not seem to be a valid url. Please fill this setting with the URL of your PODPORA installation"
         else:
             print " APP_URL - %s" % settings.APP_URL
             print " APP_BASE_URL - %s" % settings.APP_BASE_URL

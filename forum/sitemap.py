@@ -73,7 +73,7 @@ def sitemap(request, sitemaps, section=None, page=1):
     xml = smart_str(loader.render_to_string('sitemap.xml', {'urlset': urls}))
     return HttpResponse(xml, mimetype='application/xml')
 
-class OsqaSitemap(Sitemap):
+class PodporaSitemap(Sitemap):
     limit = QUESTIONS_SITEMAP_LIMIT
     changefreq = QUESTIONS_SITEMAP_CHANGEFREQ
     priority = 0.5

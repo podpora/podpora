@@ -2,7 +2,7 @@
 import os.path
 
 SITE_SRC_ROOT = os.path.dirname(__file__)
-LOG_FILENAME = 'django.osqa.log'
+LOG_FILENAME = 'django.podpora.log'
 
 #for logging
 import logging
@@ -27,7 +27,7 @@ INTERNAL_IPS = ('127.0.0.1',)
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'osqa',
+        'NAME': 'podpora',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': '',
@@ -53,6 +53,6 @@ USE_I18N = True
 LANGUAGE_CODE = 'en'
 
 DJANGO_VERSION = 1.1
-OSQA_DEFAULT_SKIN = 'default'
+PODPORA_DEFAULT_SKIN = 'default'
 
 DISABLED_MODULES = ['books', 'recaptcha', 'project_badges']

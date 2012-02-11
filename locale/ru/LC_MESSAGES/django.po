@@ -50,13 +50,13 @@ msgid "spam or advertising"
 msgstr "спам или реклама"
 
 #: forum/const.py:71
-#: forum/skins/default/templates/osqaadmin/index.html:21
+#: forum/skins/default/templates/podporaadmin/index.html:21
 msgid "question"
 msgstr "вопрос"
 
 #: forum/const.py:72
 #: forum/skins/default/templates/book.html:110
-#: forum/skins/default/templates/osqaadmin/index.html:26
+#: forum/skins/default/templates/podporaadmin/index.html:26
 msgid "answer"
 msgstr "ответ"
 
@@ -646,7 +646,7 @@ msgid "okay, let's try!"
 msgstr "Ну, попробуем!"
 
 #: forum/authentication/forms.py:41
-msgid "no OSQA community email please, thanks"
+msgid "no PODPORA community email please, thanks"
 msgstr ""
 
 #: forum/authentication/forms.py:44
@@ -745,7 +745,7 @@ msgid "Badges config"
 msgstr ""
 
 #: forum/settings/__init__.py:20
-msgid "Configure badges on your OSQA site."
+msgid "Configure badges on your PODPORA site."
 msgstr ""
 
 #: forum/settings/basic.py:9
@@ -2970,84 +2970,84 @@ msgid ""
 "        "
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/base.html:13
-msgid "OSQA administration area"
+#: forum/skins/default/templates/podporaadmin/base.html:13
+msgid "PODPORA administration area"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/base.html:26
+#: forum/skins/default/templates/podporaadmin/base.html:26
 msgid "Administration menu"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:7
+#: forum/skins/default/templates/podporaadmin/index.html:7
 msgid "Dashboard"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:10
-msgid "Welcome to the OSQA administration area."
+#: forum/skins/default/templates/podporaadmin/index.html:10
+msgid "Welcome to the PODPORA administration area."
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:17
+#: forum/skins/default/templates/podporaadmin/index.html:17
 msgid "Site statistics"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:21
-#: forum/skins/default/templates/osqaadmin/index.html:26
+#: forum/skins/default/templates/podporaadmin/index.html:21
+#: forum/skins/default/templates/podporaadmin/index.html:26
 msgid "in the last 24 hours"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:31
+#: forum/skins/default/templates/podporaadmin/index.html:31
 msgid "user"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:31
+#: forum/skins/default/templates/podporaadmin/index.html:31
 msgid "joined in the last 24 hours"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:37
+#: forum/skins/default/templates/podporaadmin/index.html:37
 msgid "Site status"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:42
+#: forum/skins/default/templates/podporaadmin/index.html:42
 msgid "Your site is running in bootstrap mode, click the button bellow to revert to defaults."
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:45
+#: forum/skins/default/templates/podporaadmin/index.html:45
 msgid "Your site is running in standard mode, click the button bellow to run in bootstrap mode."
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:47
+#: forum/skins/default/templates/podporaadmin/index.html:47
 msgid "Your site is running with some customized settings, click the buttons bellow to run with defaults or in bootstrap mode"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:51
+#: forum/skins/default/templates/podporaadmin/index.html:51
 msgid "Are you sure you want to revert to the defaults?"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:51
+#: forum/skins/default/templates/podporaadmin/index.html:51
 msgid "revert to defaults"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:54
+#: forum/skins/default/templates/podporaadmin/index.html:54
 msgid "Are you sure you want to run bootstrap mode?"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:54
+#: forum/skins/default/templates/podporaadmin/index.html:54
 msgid "go bootstrap"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:59
+#: forum/skins/default/templates/podporaadmin/index.html:59
 msgid "Recalculate scores and reputation"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:60
+#: forum/skins/default/templates/podporaadmin/index.html:60
 msgid "This is a heavy operation, are you sure?"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:60
+#: forum/skins/default/templates/podporaadmin/index.html:60
 msgid "Recalculate"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:65
+#: forum/skins/default/templates/podporaadmin/index.html:65
 msgid "Recent activity"
 msgstr ""
 
@@ -4633,7 +4633,7 @@ msgstr ""
 #~ msgid "Email verification subject line"
 #~ msgstr "Verification Email from Q&A forum"
 #~ msgid "first time greeting with %(url)s"
-#~ msgstr "Hello and welcome to OSQA - <a href='%(url)s'>please join us</a>!"
+#~ msgstr "Hello and welcome to PODPORA - <a href='%(url)s'>please join us</a>!"
 #~ msgid "have %(num_q)s unanswered questions"
 #~ msgstr "<div class=\"questions-count\">%(num_q)s</div>questions <strong>without accepted answers</strong>"
 #~ msgid ""

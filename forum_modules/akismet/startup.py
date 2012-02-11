@@ -7,7 +7,7 @@ from django.shortcuts import render_to_response
 from forum.modules import decorate
 from forum import views
 from lib.akismet import Akismet
-from forum.settings import APP_URL, OSQA_VERSION
+from forum.settings import APP_URL, PODPORA_VERSION
 
 from settings import WORDPRESS_API_KEY, REP_FOR_NO_SPAM_CHECK
 
@@ -41,7 +41,7 @@ def check_spam(param, comment_type):
                 "comment_author_url":request.user.website,
                 })
 
-            api = Akismet(settings.WORDPRESS_API_KEY, APP_URL, "OSQA/%s" % OSQA_VERSION)
+            api = Akismet(settings.WORDPRESS_API_KEY, APP_URL, "PODPORA/%s" % PODPORA_VERSION)
             if api.comment_check(comment, data):
                 post_data = request.POST
                 captcha_form = SimpleCaptchaForm(request.POST)

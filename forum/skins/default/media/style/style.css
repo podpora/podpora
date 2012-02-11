@@ -766,7 +766,7 @@ ul.errorlist li {
     max-width: 640px;
 }
 
-/* Fixes OSQA-143 IE8 text overflow issue */
+/* Fixes PODPORA-143 IE8 text overflow issue */
 div.question-body p, div.answer-body p {
     max-width: 700px;
 }

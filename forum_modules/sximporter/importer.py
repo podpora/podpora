@@ -221,12 +221,12 @@ def userimport(path, options):
             set_mapper_defaults = True
 
             if authenticated_user:
-                osqau = orm.User.objects.get(id=authenticated_user.id)
+                podporau = orm.User.objects.get(id=authenticated_user.id)
 
-                for assoc in orm.AuthKeyUserAssociation.objects.filter(user=osqau):
+                for assoc in orm.AuthKeyUserAssociation.objects.filter(user=podporau):
                     openids.add(assoc.key)
 
-                uidmapper[owneruid] = osqau.id
+                uidmapper[owneruid] = podporau.id
                 create = False
 
         sxbadges = sxu.get('badgesummary', None)
@@ -241,9 +241,9 @@ def userimport(path, options):
 
             if username in usernames:
             #if options.get('mergesimilar', False) and sxu.get('email', 'INVALID') == user_by_name[username].email:
-            #    osqau = user_by_name[username]
+            #    podporau = user_by_name[username]
             #    create = False
-            #    uidmapper[sxu.get('id')] = osqau.id
+            #    uidmapper[sxu.get('id')] = podporau.id
             #else:
                 inc = 0
 
@@ -255,7 +255,7 @@ def userimport(path, options):
                         username = totest
                         break
 
-            osqau = orm.User(
+            podporau = orm.User(
                     id           = sxu.get('id'),
                     username     = username,
                     password     = '!',
@@ -277,70 +277,70 @@ def userimport(path, options):
                     location      = sxu.get('location', ''),
                     )
 
-            osqau.save()
+            podporau.save()
 
             user_joins = orm.Action(
                     action_type = "userjoins",
-                    action_date = osqau.date_joined,
-                    user = osqau
+                    action_date = podporau.date_joined,
+                    user = podporau
                     )
             user_joins.save()
 
             rep = orm.ActionRepute(
                     value = 1,
-                    user = osqau,
-                    date = osqau.date_joined,
+                    user = podporau,
+                    date = podporau.date_joined,
                     action = user_joins
                     )
             rep.save()
 
             try:
-                orm.SubscriptionSettings.objects.get(user=osqau)
+                orm.SubscriptionSettings.objects.get(user=podporau)
             except:
-                s = orm.SubscriptionSettings(user=osqau)
+                s = orm.SubscriptionSettings(user=podporau)
                 s.save()
 
-            uidmapper[osqau.id] = osqau.id
+            uidmapper[podporau.id] = podporau.id
         else:
             new_about = sxu.get('aboutme', None)
-            if new_about and osqau.about != new_about:
-                if osqau.about:
-                    osqau.about = "%s\n|\n%s" % (osqau.about, new_about)
+            if new_about and podporau.about != new_about:
+                if podporau.about:
+                    podporau.about = "%s\n|\n%s" % (podporau.about, new_about)
                 else:
-                    osqau.about = new_about
+                    podporau.about = new_about
 
-            osqau.username = sxu.get('displayname',
+            podporau.username = sxu.get('displayname',
                                      sxu.get('displaynamecleaned', sxu.get('realname', final_username_attempt(sxu))))
-            osqau.email = sxu.get('email', '')
-            osqau.reputation += int(sxu.get('reputation'))
-            osqau.gold += int(badges['1'])
-            osqau.silver += int(badges['2'])
-            osqau.bronze += int(badges['3'])
+            podporau.email = sxu.get('email', '')
+            podporau.reputation += int(sxu.get('reputation'))
+            podporau.gold += int(badges['1'])
+            podporau.silver += int(badges['2'])
+            podporau.bronze += int(badges['3'])
 
-            osqau.date_joined = readTime(sxu.get('creationdate'))
-            osqau.website = sxu.get('websiteurl', '')
-            osqau.date_of_birth = sxu.get('birthday', None) and readTime(sxu['birthday']) or None
-            osqau.location = sxu.get('location', '')
-            osqau.real_name = sxu.get('realname', '')
+            podporau.date_joined = readTime(sxu.get('creationdate'))
+            podporau.website = sxu.get('websiteurl', '')
+            podporau.date_of_birth = sxu.get('birthday', None) and readTime(sxu['birthday']) or None
+            podporau.location = sxu.get('location', '')
+            podporau.real_name = sxu.get('realname', '')
 
-            #merged_users.append(osqau.id)
-            osqau.save()
+            #merged_users.append(podporau.id)
+            podporau.save()
 
         if set_mapper_defaults:
-            uidmapper[-1] = osqau.id
-            uidmapper.default = osqau.id
+            uidmapper[-1] = podporau.id
+            uidmapper.default = podporau.id
 
-        usernames.append(osqau.username)
+        usernames.append(podporau.username)
 
         openid = sxu.get('openid', None)
         if openid and openidre.match(openid) and (not openid in openids):
-            assoc = orm.AuthKeyUserAssociation(user=osqau, key=openid, provider="openidurl")
+            assoc = orm.AuthKeyUserAssociation(user=podporau, key=openid, provider="openidurl")
             assoc.save()
             openids.add(openid)
 
         openidalt = sxu.get('openidalt', None)
         if openidalt and openidre.match(openidalt) and (not openidalt in openids):
-            assoc = orm.AuthKeyUserAssociation(user=osqau, key=openidalt, provider="openidurl")
+            assoc = orm.AuthKeyUserAssociation(user=podporau, key=openidalt, provider="openidurl")
             assoc.save()
             openids.add(openidalt)
 
@@ -730,26 +730,26 @@ def badges_import(dump, uidmap, post_list):
     obadges = dict([(b.cls, b) for b in orm.Badge.objects.all()])
     user_badge_count = {}
 
-    sx_to_osqa = {}
+    sx_to_podpora = {}
 
     for id, sxb in sxbadges.items():
         cls = "".join(sxb['name'].replace('&', 'And').split(' '))
 
         if cls in obadges:
-            sx_to_osqa[id] = obadges[cls]
+            sx_to_podpora[id] = obadges[cls]
         else:
-            osqab = orm.Badge(
+            podporab = orm.Badge(
                     cls = cls,
                     awarded_count = 0,
                     type = sxb['class']
                     )
-            osqab.save()
-            sx_to_osqa[id] = osqab
+            podporab.save()
+            sx_to_podpora[id] = podporab
 
-    osqaawards = []
+    podporaawards = []
 
     def callback(sxa):
-        badge = sx_to_osqa[int(sxa['badgeid'])]
+        badge = sx_to_podpora[int(sxa['badgeid'])]
 
         user_id = uidmap[sxa['userid']]
         if not user_badge_count.get(user_id, None):
@@ -763,7 +763,7 @@ def badges_import(dump, uidmap, post_list):
 
         action.save()
 
-        osqaa = orm.Award(
+        podporaa = orm.Award(
                 user_id = uidmap[sxa['userid']],
                 badge = badge,
                 node_id = post_list[user_badge_count[user_id]],
@@ -771,7 +771,7 @@ def badges_import(dump, uidmap, post_list):
                 action = action
                 )
 
-        osqaa.save()
+        podporaa.save()
         badge.awarded_count += 1
 
         user_badge_count[user_id] += 1
@@ -842,7 +842,7 @@ def pages_import(dump, currid, owner):
 
     save_setting('STATIC_PAGE_REGISTRY', dbsafe_encode(registry))
 
-sx2osqa_set_map = {
+sx2podpora_set_map = {
 u'theme.html.name': 'APP_TITLE',
 u'theme.html.footer': 'CUSTOM_FOOTER',
 u'theme.html.sidebar': 'SIDEBAR_UPPER_TEXT',
@@ -874,8 +874,8 @@ def static_import(dump):
     sx_unknown = {}
 
     def callback(set):
-        if unicode(set['name']) in sx2osqa_set_map:
-            save_setting(sx2osqa_set_map[set['name']], dbsafe_encode(html_decode(set['value'])))
+        if unicode(set['name']) in sx2podpora_set_map:
+            save_setting(sx2podpora_set_map[set['name']], dbsafe_encode(html_decode(set['value'])))
         else:
             sx_unknown[set['name']] = html_decode(set['value'])
 

@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OSQA 完全汉化 1.0\n"
+"Project-Id-Version: PODPORA 完全汉化 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-08-27 00:30-0400\n"
 "PO-Revision-Date: 2011-09-08 15:07+0800\n"
@@ -72,8 +72,8 @@ msgstr "与Facebook API Key在同一处获取。"
 
 #: forum/feed.py:103
 #: forum/models/answer.py:5
-#: forum/skins/default/templates/osqaadmin/dashboard.html:24
-#: forum/skins/default/templates/osqaadmin/index.html:26
+#: forum/skins/default/templates/podporaadmin/dashboard.html:24
+#: forum/skins/default/templates/podporaadmin/index.html:26
 #: forum/skins/default/templates/question_list/item.html:15
 #: forum/views/writers.py:260
 #: forum_modules/akismet/startup.py:76
@@ -82,8 +82,8 @@ msgstr "回答"
 
 #: forum/feed.py:103
 #: forum/models/question.py:17
-#: forum/skins/default/templates/osqaadmin/dashboard.html:19
-#: forum/skins/default/templates/osqaadmin/index.html:21
+#: forum/skins/default/templates/podporaadmin/dashboard.html:19
+#: forum/skins/default/templates/podporaadmin/index.html:21
 #: forum/views/writers.py:91
 #: forum_modules/akismet/startup.py:75
 msgid "question"
@@ -996,7 +996,7 @@ msgid "Escaped"
 msgstr "Escaped"
 
 #: forum/forms/admin.py:75
-#: forum/skins/default/templates/osqaadmin/nodeman.html:285
+#: forum/skins/default/templates/podporaadmin/nodeman.html:285
 msgid "Title"
 msgstr "标题"
 
@@ -1254,7 +1254,7 @@ msgstr "不会显示，只用来计算年龄，格式：YYYY-MM-DD"
 
 #: forum/forms/qanda.py:295
 #: forum/skins/default/templates/account_settings.html:21
-#: forum/skins/default/templates/osqaadmin/moderation.html:69
+#: forum/skins/default/templates/podporaadmin/moderation.html:69
 msgid "Profile"
 msgstr "个人信息"
 
@@ -1376,7 +1376,7 @@ msgid "Badges config"
 msgstr "勋章设置"
 
 #: forum/settings/__init__.py:62
-msgid "Configure badges on your OSQA site."
+msgid "Configure badges on your PODPORA site."
 msgstr "设置站点的勋章"
 
 #: forum/settings/about.py:4
@@ -1436,7 +1436,7 @@ msgid "Are normal users allowed to accept their own answers."
 msgstr "普通用户是否可以为自己的问题采纳自己的回答。"
 
 #: forum/settings/basic.py:9
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:67
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:67
 msgid "Basic settings"
 msgstr "基本设置"
 
@@ -1681,8 +1681,8 @@ msgid "Form settings"
 msgstr "站点设置"
 
 #: forum/settings/form.py:5
-msgid "General settings for the OSQA forms."
-msgstr "OSQA站点通用设置"
+msgid "General settings for the PODPORA forms."
+msgstr "PODPORA站点通用设置"
 
 #: forum/settings/form.py:8
 msgid "Enable community wiki"
@@ -2465,8 +2465,8 @@ msgid "Users settings"
 msgstr "用户设置"
 
 #: forum/settings/users.py:7
-msgid "General settings for the OSQA users."
-msgstr "OSQA用户通用设置"
+msgid "General settings for the PODPORA users."
+msgstr "PODPORA用户通用设置"
 
 #: forum/settings/users.py:10
 msgid "Allow negative reputation"
@@ -3573,7 +3573,7 @@ msgstr "我是人类"
 
 #: forum/skins/default/templates/opensearch.html:4
 #: forum/skins/default/templates/opensearch.html:5
-#: forum/skins/default/templates/osqaadmin/nodeman.html:276
+#: forum/skins/default/templates/podporaadmin/nodeman.html:276
 msgid "Search"
 msgstr "搜索"
 
@@ -4619,594 +4619,594 @@ msgstr ""
 "%(question_author)s 刚刚在%(safe_app_name)s提出了新的问题，标题是\n"
 "\"%(question_title)s\"标签是%(question_tags)s：\n"
 
-#: forum/skins/default/templates/osqaadmin/base.html:5
+#: forum/skins/default/templates/podporaadmin/base.html:5
 msgid "Site Administration"
 msgstr "站点管理"
 
-#: forum/skins/default/templates/osqaadmin/base.html:15
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:22
-msgid "OSQA administration area"
-msgstr "OSQA后台管理页面"
+#: forum/skins/default/templates/podporaadmin/base.html:15
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:22
+msgid "PODPORA administration area"
+msgstr "PODPORA后台管理页面"
 
-#: forum/skins/default/templates/osqaadmin/base.html:29
+#: forum/skins/default/templates/podporaadmin/base.html:29
 msgid "Switch to django style interface"
 msgstr "切换到Django样式界面"
 
-#: forum/skins/default/templates/osqaadmin/base.html:30
+#: forum/skins/default/templates/podporaadmin/base.html:30
 msgid "Administration menu"
 msgstr "管理菜单"
 
-#: forum/skins/default/templates/osqaadmin/base.html:42
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:130
-#: forum/skins/default/templates/osqaadmin/maintenance.html:5
-#: forum/skins/default/templates/osqaadmin/maintenance.html:6
+#: forum/skins/default/templates/podporaadmin/base.html:42
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:130
+#: forum/skins/default/templates/podporaadmin/maintenance.html:5
+#: forum/skins/default/templates/podporaadmin/maintenance.html:6
 msgid "Maintenance mode"
 msgstr "维护模式"
 
-#: forum/skins/default/templates/osqaadmin/base.html:43
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:131
-#: forum/skins/default/templates/osqaadmin/flagged_posts.html:6
-#: forum/skins/default/templates/osqaadmin/flagged_posts.html:7
-#: forum/skins/default/templates/osqaadmin/flagged_posts.html:13
+#: forum/skins/default/templates/podporaadmin/base.html:43
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:131
+#: forum/skins/default/templates/podporaadmin/flagged_posts.html:6
+#: forum/skins/default/templates/podporaadmin/flagged_posts.html:7
+#: forum/skins/default/templates/podporaadmin/flagged_posts.html:13
 msgid "Flagged Posts"
 msgstr "举报管理"
 
-#: forum/skins/default/templates/osqaadmin/createuser.html:7
+#: forum/skins/default/templates/podporaadmin/createuser.html:7
 msgid "Create User"
 msgstr "创建用户"
 
-#: forum/skins/default/templates/osqaadmin/createuser.html:10
+#: forum/skins/default/templates/podporaadmin/createuser.html:10
 msgid "Quick creation of a new user"
 msgstr "快速创建一个新用户"
 
-#: forum/skins/default/templates/osqaadmin/createuser.html:18
-#: forum/skins/default/templates/osqaadmin/edit_page.html:26
-#: forum/skins/default/templates/osqaadmin/nodeman.html:399
-#: forum/skins/default/templates/osqaadmin/set.html:17
+#: forum/skins/default/templates/podporaadmin/createuser.html:18
+#: forum/skins/default/templates/podporaadmin/edit_page.html:26
+#: forum/skins/default/templates/podporaadmin/nodeman.html:399
+#: forum/skins/default/templates/podporaadmin/set.html:17
 #: forum/skins/default/templates/users/preferences.html:26
 msgid "Save"
 msgstr "保存"
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:7
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:42
-#: forum/skins/default/templates/osqaadmin/index.html:7
-#: forum/skins/default/templates/osqaadmin/statistics.html:25
-#: forum/skins/default/templates/osqaadmin/statistics.html:26
+#: forum/skins/default/templates/podporaadmin/dashboard.html:7
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:42
+#: forum/skins/default/templates/podporaadmin/index.html:7
+#: forum/skins/default/templates/podporaadmin/statistics.html:25
+#: forum/skins/default/templates/podporaadmin/statistics.html:26
 msgid "Dashboard"
 msgstr "属性清单"
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:10
-#: forum/skins/default/templates/osqaadmin/index.html:10
-msgid "Welcome to the OSQA administration area."
-msgstr "欢迎来到OSQA后台管理页面"
+#: forum/skins/default/templates/podporaadmin/dashboard.html:10
+#: forum/skins/default/templates/podporaadmin/index.html:10
+msgid "Welcome to the PODPORA administration area."
+msgstr "欢迎来到PODPORA后台管理页面"
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:16
+#: forum/skins/default/templates/podporaadmin/dashboard.html:16
 msgid "Quick statistics"
 msgstr "快速统计"
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:19
-#: forum/skins/default/templates/osqaadmin/dashboard.html:24
-#: forum/skins/default/templates/osqaadmin/index.html:21
-#: forum/skins/default/templates/osqaadmin/index.html:26
+#: forum/skins/default/templates/podporaadmin/dashboard.html:19
+#: forum/skins/default/templates/podporaadmin/dashboard.html:24
+#: forum/skins/default/templates/podporaadmin/index.html:21
+#: forum/skins/default/templates/podporaadmin/index.html:26
 msgid "in the last 24 hours"
 msgstr "在过去24小时内"
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:29
-#: forum/skins/default/templates/osqaadmin/index.html:31
+#: forum/skins/default/templates/podporaadmin/dashboard.html:29
+#: forum/skins/default/templates/podporaadmin/index.html:31
 msgid "user"
 msgstr "用户"
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:29
-#: forum/skins/default/templates/osqaadmin/index.html:31
+#: forum/skins/default/templates/podporaadmin/dashboard.html:29
+#: forum/skins/default/templates/podporaadmin/index.html:31
 msgid "joined in the last 24 hours"
 msgstr "在过去24小时内"
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:36
-#: forum/skins/default/templates/osqaadmin/index.html:37
+#: forum/skins/default/templates/podporaadmin/dashboard.html:36
+#: forum/skins/default/templates/podporaadmin/index.html:37
 msgid "Site status"
 msgstr "站点状态"
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:40
-#: forum/skins/default/templates/osqaadmin/index.html:42
+#: forum/skins/default/templates/podporaadmin/dashboard.html:40
+#: forum/skins/default/templates/podporaadmin/index.html:42
 msgid "Your site is running in bootstrap mode, click the button below to revert to defaults."
 msgstr "你的站点已进入引导模式，点击下方按钮还原到默认状态。"
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:43
-#: forum/skins/default/templates/osqaadmin/index.html:45
+#: forum/skins/default/templates/podporaadmin/dashboard.html:43
+#: forum/skins/default/templates/podporaadmin/index.html:45
 msgid "Your site is running in standard mode, click the button below to run in bootstrap mode."
 msgstr "你的站点目前为默认状态，点击下方按钮进入到引导模式。"
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:45
-#: forum/skins/default/templates/osqaadmin/index.html:47
+#: forum/skins/default/templates/podporaadmin/dashboard.html:45
+#: forum/skins/default/templates/podporaadmin/index.html:47
 msgid "Your site is running with some customized settings, click the buttons below to run with defaults or in bootstrap mode"
 msgstr "你的站点应用了一些自定义设置，点击下方的按钮还原到默认状态或进入到引导模式。"
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:49
-#: forum/skins/default/templates/osqaadmin/index.html:51
+#: forum/skins/default/templates/podporaadmin/dashboard.html:49
+#: forum/skins/default/templates/podporaadmin/index.html:51
 msgid "Are you sure you want to revert to the defaults?"
 msgstr "你确定要还原到默认状态吗？"
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:49
-#: forum/skins/default/templates/osqaadmin/index.html:51
+#: forum/skins/default/templates/podporaadmin/dashboard.html:49
+#: forum/skins/default/templates/podporaadmin/index.html:51
 msgid "revert to defaults"
 msgstr "恢复默认"
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:52
-#: forum/skins/default/templates/osqaadmin/index.html:54
+#: forum/skins/default/templates/podporaadmin/dashboard.html:52
+#: forum/skins/default/templates/podporaadmin/index.html:54
 msgid "Are you sure you want to run bootstrap mode?"
 msgstr "你确定要进入引导模式？"
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:52
-#: forum/skins/default/templates/osqaadmin/index.html:54
+#: forum/skins/default/templates/podporaadmin/dashboard.html:52
+#: forum/skins/default/templates/podporaadmin/index.html:54
 msgid "go bootstrap"
 msgstr "引导模式"
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:66
-#: forum/skins/default/templates/osqaadmin/index.html:71
+#: forum/skins/default/templates/podporaadmin/dashboard.html:66
+#: forum/skins/default/templates/podporaadmin/index.html:71
 msgid "Recent activity"
 msgstr "最近操作"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:29
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:29
 msgid "Administration Area"
 msgstr "后台管理页面"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:33
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:33
 msgid "Welcome,"
 msgstr "欢迎，"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:35
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:35
 msgid "To standard interface"
 msgstr "切换到常规样式界面"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:36
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:36
 msgid "Back to home page"
 msgstr "返回首页"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:37
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:37
 msgid "Log out"
 msgstr "注销"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:41
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:41
 msgid "Home"
 msgstr "主页"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:59
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:59
 msgid "Unpublished changes"
 msgstr "未生效修改"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:62
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:62
 msgid "Items marked with this icon have unpublished changes."
 msgstr "做过修改且还没有生效的项目将带有这个图标。"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:78
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:78
 msgid "Workflow settings"
 msgstr "规则设置"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:88
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:88
 msgid "Forum settings"
 msgstr "站点设置"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:96
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:96
 msgid "Static content"
 msgstr "静态内容"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:98
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:98
 msgid "Custom Pages"
 msgstr "自定义页面"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:104
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:108
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:112
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:122
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:104
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:108
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:112
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:122
 msgid "Unsaved changes"
 msgstr "未保存的页面"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:117
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:117
 msgid "Other settings"
 msgstr "其他设置"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:128
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:128
 msgid "Tools"
 msgstr "管理工具"
 
-#: forum/skins/default/templates/osqaadmin/edit_page.html:5
-#: forum/skins/default/templates/osqaadmin/edit_page.html:8
+#: forum/skins/default/templates/podporaadmin/edit_page.html:5
+#: forum/skins/default/templates/podporaadmin/edit_page.html:8
 msgid "Editing page"
 msgstr "编辑页面"
 
-#: forum/skins/default/templates/osqaadmin/edit_page.html:7
+#: forum/skins/default/templates/podporaadmin/edit_page.html:7
 msgid "Static Pages"
 msgstr "自定义页面"
 
-#: forum/skins/default/templates/osqaadmin/edit_page.html:8
+#: forum/skins/default/templates/podporaadmin/edit_page.html:8
 msgid "Creating page"
 msgstr "创建页面"
 
-#: forum/skins/default/templates/osqaadmin/edit_page.html:11
-#: forum/skins/default/templates/osqaadmin/static_pages.html:12
+#: forum/skins/default/templates/podporaadmin/edit_page.html:11
+#: forum/skins/default/templates/podporaadmin/static_pages.html:12
 msgid "New page"
 msgstr "新页面"
 
-#: forum/skins/default/templates/osqaadmin/edit_page.html:12
+#: forum/skins/default/templates/podporaadmin/edit_page.html:12
 msgid "Published"
 msgstr "已发布"
 
-#: forum/skins/default/templates/osqaadmin/edit_page.html:12
+#: forum/skins/default/templates/podporaadmin/edit_page.html:12
 msgid "Unpublished"
 msgstr "已取消发布"
 
-#: forum/skins/default/templates/osqaadmin/edit_page.html:24
-#: forum/skins/default/templates/osqaadmin/static_pages.html:21
+#: forum/skins/default/templates/podporaadmin/edit_page.html:24
+#: forum/skins/default/templates/podporaadmin/static_pages.html:21
 msgid "Edit"
 msgstr "编辑"
 
-#: forum/skins/default/templates/osqaadmin/edit_page.html:29
+#: forum/skins/default/templates/podporaadmin/edit_page.html:29
 msgid "Unpublish"
 msgstr "取消发布"
 
-#: forum/skins/default/templates/osqaadmin/edit_page.html:31
+#: forum/skins/default/templates/podporaadmin/edit_page.html:31
 msgid "Publish"
 msgstr "发布"
 
-#: forum/skins/default/templates/osqaadmin/flagged_posts.html:8
+#: forum/skins/default/templates/podporaadmin/flagged_posts.html:8
 msgid "This are the posts that have been flagged by users."
 msgstr "被用户举报的帖子"
 
-#: forum/skins/default/templates/osqaadmin/index.html:17
+#: forum/skins/default/templates/podporaadmin/index.html:17
 msgid "Site statistics"
 msgstr "站点统计"
 
-#: forum/skins/default/templates/osqaadmin/index.html:65
+#: forum/skins/default/templates/podporaadmin/index.html:65
 msgid "Recalculate scores and reputation"
 msgstr "重新计算分数与信誉"
 
-#: forum/skins/default/templates/osqaadmin/index.html:66
+#: forum/skins/default/templates/podporaadmin/index.html:66
 msgid "This is a heavy operation, are you sure?"
 msgstr "这是一个繁杂的操作，你确定吗？"
 
-#: forum/skins/default/templates/osqaadmin/index.html:66
+#: forum/skins/default/templates/podporaadmin/index.html:66
 msgid "Recalculate"
 msgstr "重新计算"
 
-#: forum/skins/default/templates/osqaadmin/mail_test.html:11
+#: forum/skins/default/templates/podporaadmin/mail_test.html:11
 #, python-format
 msgid "%(prefix)s Your email settings are correct: %(app_name)s"
 msgstr "%(prefix)s你的邮件设置是正确的：%(app_name)s"
 
-#: forum/skins/default/templates/osqaadmin/mail_test.html:14
-#: forum/skins/default/templates/osqaadmin/mail_test.html:18
+#: forum/skins/default/templates/podporaadmin/mail_test.html:14
+#: forum/skins/default/templates/podporaadmin/mail_test.html:18
 msgid "If you see this content your E-Mail settings are correct."
 msgstr "如果你看到这些内容，那么你的邮件设置就是正确的。"
 
-#: forum/skins/default/templates/osqaadmin/maintenance.html:7
+#: forum/skins/default/templates/podporaadmin/maintenance.html:7
 msgid "Maintainance mode allows you to close your site for maintainance, allowing only a predetermined set of ip addresses to access it normally."
 msgstr "维护模式允许你暂时将站点关闭来维护（通常维护模式状态下仅允许某些特定的IP地址访问）"
 
-#: forum/skins/default/templates/osqaadmin/maintenance.html:13
+#: forum/skins/default/templates/podporaadmin/maintenance.html:13
 msgid "Your site is currently running on maintenance mode."
 msgstr "你的站点目前正处于维护模式"
 
-#: forum/skins/default/templates/osqaadmin/maintenance.html:14
+#: forum/skins/default/templates/podporaadmin/maintenance.html:14
 msgid "You can adjust the settings bellow"
 msgstr "你可以在下面调整设置"
 
-#: forum/skins/default/templates/osqaadmin/maintenance.html:20
+#: forum/skins/default/templates/podporaadmin/maintenance.html:20
 msgid "Adjust settings"
 msgstr "调整设置"
 
-#: forum/skins/default/templates/osqaadmin/maintenance.html:21
+#: forum/skins/default/templates/podporaadmin/maintenance.html:21
 msgid "Open site"
 msgstr "开启站点"
 
-#: forum/skins/default/templates/osqaadmin/maintenance.html:23
+#: forum/skins/default/templates/podporaadmin/maintenance.html:23
 msgid "Close for maintenance"
 msgstr "开始维护"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:5
-#: forum/skins/default/templates/osqaadmin/moderation.html:6
+#: forum/skins/default/templates/podporaadmin/moderation.html:5
+#: forum/skins/default/templates/podporaadmin/moderation.html:6
 msgid "Moderation"
 msgstr "管理"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:7
+#: forum/skins/default/templates/podporaadmin/moderation.html:7
 msgid "These tools allow you to search for undesired behaviours and cheating patterns."
 msgstr "这些工具可以让你搜索违规行为和作弊信息。"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:14
+#: forum/skins/default/templates/podporaadmin/moderation.html:14
 msgid "Verify:"
 msgstr "确认:"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:17
+#: forum/skins/default/templates/podporaadmin/moderation.html:17
 msgid "highest ranking users"
 msgstr "等级最高的用户"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:18
+#: forum/skins/default/templates/podporaadmin/moderation.html:18
 msgid "newer users"
 msgstr "新用户"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:19
+#: forum/skins/default/templates/podporaadmin/moderation.html:19
 msgid "older users"
 msgstr "老用户"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:20
+#: forum/skins/default/templates/podporaadmin/moderation.html:20
 msgid "users with these ids"
 msgstr "拥有以下用户名的用户"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:24
+#: forum/skins/default/templates/podporaadmin/moderation.html:24
 msgid "(Comma separated list of user ids)"
 msgstr "（以英文逗号分割的用户名列表）"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:26
-#: forum/skins/default/templates/osqaadmin/nodeman.html:424
+#: forum/skins/default/templates/podporaadmin/moderation.html:26
+#: forum/skins/default/templates/podporaadmin/nodeman.html:424
 msgid "Go"
 msgstr "开始"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:51
+#: forum/skins/default/templates/podporaadmin/moderation.html:51
 msgid "Possible cheaters"
 msgstr "可能的作弊者"
 
 #: forum/forms/qanda.py:290
-#: forum/skins/default/templates/osqaadmin/moderation.html:57
-#: forum/skins/default/templates/osqaadmin/moderation.html:70
+#: forum/skins/default/templates/podporaadmin/moderation.html:57
+#: forum/skins/default/templates/podporaadmin/moderation.html:70
 msgid "Email"
 msgstr "邮件地址"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:59
-#: forum/skins/default/templates/osqaadmin/moderation.html:83
+#: forum/skins/default/templates/podporaadmin/moderation.html:59
+#: forum/skins/default/templates/podporaadmin/moderation.html:83
 msgid "Validated"
 msgstr "已验证"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:61
-#: forum/skins/default/templates/osqaadmin/moderation.html:85
+#: forum/skins/default/templates/podporaadmin/moderation.html:61
+#: forum/skins/default/templates/podporaadmin/moderation.html:85
 msgid "Not validated"
 msgstr "未验证"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:64
+#: forum/skins/default/templates/podporaadmin/moderation.html:64
 msgid "Reputation:"
 msgstr "信誉:"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:71
+#: forum/skins/default/templates/podporaadmin/moderation.html:71
 msgid "Reputation"
 msgstr "信誉"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:72
+#: forum/skins/default/templates/podporaadmin/moderation.html:72
 msgid "Affecting actions"
 msgstr "受影响的操作"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:73
+#: forum/skins/default/templates/podporaadmin/moderation.html:73
 msgid "Cross ips"
 msgstr "IP地址段"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:74
+#: forum/skins/default/templates/podporaadmin/moderation.html:74
 msgid "Cheating score"
 msgstr "作弊分数"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:77
+#: forum/skins/default/templates/podporaadmin/moderation.html:77
 msgid "Possible fake accounts"
 msgstr "可能的假账号"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:90
-#: forum/skins/default/templates/osqaadmin/moderation.html:91
+#: forum/skins/default/templates/podporaadmin/moderation.html:90
+#: forum/skins/default/templates/podporaadmin/moderation.html:91
 msgid "out of"
 msgstr "/"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:73
+#: forum/skins/default/templates/podporaadmin/nodeman.html:73
 msgid "rep"
 msgstr "信誉"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:102
+#: forum/skins/default/templates/podporaadmin/nodeman.html:102
 msgid "uses"
 msgstr "使用"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:261
+#: forum/skins/default/templates/podporaadmin/nodeman.html:261
 msgid "Node manager"
 msgstr "帖子管理"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:264
+#: forum/skins/default/templates/podporaadmin/nodeman.html:264
 msgid "Nodes bulk management"
 msgstr "帖子批量管理"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:278
+#: forum/skins/default/templates/podporaadmin/nodeman.html:278
 msgid "reset text filter"
 msgstr "重置文本过滤"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:290
+#: forum/skins/default/templates/podporaadmin/nodeman.html:290
 msgid "Body"
 msgstr "内容"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:295
+#: forum/skins/default/templates/podporaadmin/nodeman.html:295
 msgid "Title and Body"
 msgstr "标题和内容"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:325
+#: forum/skins/default/templates/podporaadmin/nodeman.html:325
 msgid "Filter"
 msgstr "过滤"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:325
+#: forum/skins/default/templates/podporaadmin/nodeman.html:325
 msgid "Click to show/hide"
 msgstr "点击以显示/隐藏"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:327
+#: forum/skins/default/templates/podporaadmin/nodeman.html:327
 msgid "By type"
 msgstr "类型"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:330
+#: forum/skins/default/templates/podporaadmin/nodeman.html:330
 msgid "click to clear the type filter"
 msgstr "点击以清除类型过滤"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:330
+#: forum/skins/default/templates/podporaadmin/nodeman.html:330
 msgid "all"
 msgstr "所有"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:333
-#: forum/skins/default/templates/osqaadmin/nodeman.html:344
+#: forum/skins/default/templates/podporaadmin/nodeman.html:333
+#: forum/skins/default/templates/podporaadmin/nodeman.html:344
 msgid "click to remove from the filter"
 msgstr "点击以从过滤中移除"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:333
-#: forum/skins/default/templates/osqaadmin/nodeman.html:344
+#: forum/skins/default/templates/podporaadmin/nodeman.html:333
+#: forum/skins/default/templates/podporaadmin/nodeman.html:344
 msgid "click to add to the filter"
 msgstr "点击以向过滤中添加"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:338
+#: forum/skins/default/templates/podporaadmin/nodeman.html:338
 msgid "By state"
 msgstr "状态"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:341
+#: forum/skins/default/templates/podporaadmin/nodeman.html:341
 msgid "click to clear the state filter"
 msgstr "点击以清除状态过滤"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:341
+#: forum/skins/default/templates/podporaadmin/nodeman.html:341
 msgid "any"
 msgstr "任意"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:350
+#: forum/skins/default/templates/podporaadmin/nodeman.html:350
 msgid "Match any selected"
 msgstr "符合任意选择"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:351
+#: forum/skins/default/templates/podporaadmin/nodeman.html:351
 msgid "Match all selected"
 msgstr "符合所有选择"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:355
+#: forum/skins/default/templates/podporaadmin/nodeman.html:355
 msgid "By author(s)"
 msgstr "作者"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:357
+#: forum/skins/default/templates/podporaadmin/nodeman.html:357
 msgid "No users selected, use the box bellow to add users to the filter."
 msgstr "没有选中任何用户，请在下方输入用户名来添加到过滤。"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:367
+#: forum/skins/default/templates/podporaadmin/nodeman.html:367
 msgid "Click on the cross next to a user name to remove it from the filter."
 msgstr "点击用户名旁边的X可将其从过滤中移除。"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:371
+#: forum/skins/default/templates/podporaadmin/nodeman.html:371
 msgid "By tag(s)"
 msgstr "标签"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:373
+#: forum/skins/default/templates/podporaadmin/nodeman.html:373
 msgid "No tags selected, use the box bellow to add tags to the filter."
 msgstr "没有选中任何标签，请在下方输入标签来添加到过滤。"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:383
+#: forum/skins/default/templates/podporaadmin/nodeman.html:383
 msgid "Click on the cross next to a tag name to remove it from the filter."
 msgstr "点击标签旁边的X可将其从过滤中移除。"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:387
+#: forum/skins/default/templates/podporaadmin/nodeman.html:387
 msgid "Pre defined"
 msgstr "预置"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:389
+#: forum/skins/default/templates/podporaadmin/nodeman.html:389
 msgid "There are no saved filters. Click bellow to add."
 msgstr "没有已保存的过滤方案。请在下方点击添加。"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:398
+#: forum/skins/default/templates/podporaadmin/nodeman.html:398
 msgid "Filter name..."
 msgstr "过滤名称..."
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:399
+#: forum/skins/default/templates/podporaadmin/nodeman.html:399
 msgid "Click to save the current filter"
 msgstr "点击以保存当前过滤"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:415
+#: forum/skins/default/templates/podporaadmin/nodeman.html:415
 msgid "Action"
 msgstr "操作"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:418
+#: forum/skins/default/templates/podporaadmin/nodeman.html:418
 msgid "Mark deleted"
 msgstr "放入回收站"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:419
+#: forum/skins/default/templates/podporaadmin/nodeman.html:419
 msgid "Undelete"
 msgstr "从回收站还原"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:420
+#: forum/skins/default/templates/podporaadmin/nodeman.html:420
 msgid "Delete completely"
 msgstr "彻底删除"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:421
+#: forum/skins/default/templates/podporaadmin/nodeman.html:421
 msgid "Close (questions only)"
 msgstr "关闭（仅限于问题）"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:424
+#: forum/skins/default/templates/podporaadmin/nodeman.html:424
 msgid "Run the selected action"
 msgstr "运行已选择的操作"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:446
+#: forum/skins/default/templates/podporaadmin/nodeman.html:446
 msgid "Type"
 msgstr "类型"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:447
+#: forum/skins/default/templates/podporaadmin/nodeman.html:447
 msgid "Summary"
 msgstr "简介"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:449
+#: forum/skins/default/templates/podporaadmin/nodeman.html:449
 msgid "State"
 msgstr "状态"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:451
+#: forum/skins/default/templates/podporaadmin/nodeman.html:451
 msgid "Author"
 msgstr "作者"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:454
+#: forum/skins/default/templates/podporaadmin/nodeman.html:454
 msgid "Added at"
 msgstr "发表于"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:463
+#: forum/skins/default/templates/podporaadmin/nodeman.html:463
 msgid "Last activity by"
 msgstr "最后操作人"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:466
+#: forum/skins/default/templates/podporaadmin/nodeman.html:466
 msgid "Last activity at"
 msgstr "最后操作时间"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:468
+#: forum/skins/default/templates/podporaadmin/nodeman.html:468
 #: forum_modules/exporter/exporter.py:368
 #: forum_modules/exporter/importer.py:420
 msgid "Tags"
 msgstr "标签"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:497
+#: forum/skins/default/templates/podporaadmin/nodeman.html:497
 msgid "by"
 msgstr "由"
 
-#: forum/skins/default/templates/osqaadmin/set.html:19
+#: forum/skins/default/templates/podporaadmin/set.html:19
 msgid "Preview"
 msgstr "预览"
 
-#: forum/skins/default/templates/osqaadmin/set.html:21
+#: forum/skins/default/templates/podporaadmin/set.html:21
 msgid "Reset Changes"
 msgstr "重置"
 
-#: forum/skins/default/templates/osqaadmin/static_pages.html:5
-#: forum/skins/default/templates/osqaadmin/static_pages.html:6
+#: forum/skins/default/templates/podporaadmin/static_pages.html:5
+#: forum/skins/default/templates/podporaadmin/static_pages.html:6
 msgid "Static pages"
 msgstr "自定义页面"
 
-#: forum/skins/default/templates/osqaadmin/static_pages.html:7
+#: forum/skins/default/templates/podporaadmin/static_pages.html:7
 msgid "Allows you to create a set of static pages"
 msgstr "允许你创建一系列自定义页面"
 
-#: forum/skins/default/templates/osqaadmin/static_pages.html:10
+#: forum/skins/default/templates/podporaadmin/static_pages.html:10
 msgid "Select page to edit"
 msgstr "选择要编辑的页面"
 
-#: forum/skins/default/templates/osqaadmin/static_pages.html:16
+#: forum/skins/default/templates/podporaadmin/static_pages.html:16
 msgid "Pages"
 msgstr "页面"
 
-#: forum/skins/default/templates/osqaadmin/static_pages.html:23
+#: forum/skins/default/templates/podporaadmin/static_pages.html:23
 msgid "Are you sure you want to delete this page?"
 msgstr "你确定要删除这个页面吗？"
 
-#: forum/skins/default/templates/osqaadmin/static_pages.html:24
+#: forum/skins/default/templates/podporaadmin/static_pages.html:24
 msgid "Delete"
 msgstr "删除"
 
-#: forum/skins/default/templates/osqaadmin/statistics.html:27
+#: forum/skins/default/templates/podporaadmin/statistics.html:27
 msgid "Some simple graphics to help you get a notion of whats going on in your site."
 msgstr "一些可以帮助你获知站点中有什么动静的简单图表。"
 
-#: forum/skins/default/templates/osqaadmin/test_email_settings.html:4
+#: forum/skins/default/templates/podporaadmin/test_email_settings.html:4
 msgid ""
 "\n"
 "        An attempt has been made to send email to\n"
@@ -5216,7 +5216,7 @@ msgstr ""
 "        尝试发送邮件给\n"
 "    "
 
-#: forum/skins/default/templates/osqaadmin/test_email_settings.html:10
+#: forum/skins/default/templates/podporaadmin/test_email_settings.html:10
 msgid ""
 "\n"
 "        Please, check your inbox and if you see the new test message your email STMP settings are correct.\n"
@@ -5226,7 +5226,7 @@ msgstr ""
 "        请查看你的收件箱，如果你收到了测试信息，那么你邮件的SMTP设置是正确的。\n"
 "    "
 
-#: forum/skins/default/templates/osqaadmin/test_email_settings.html:16
+#: forum/skins/default/templates/podporaadmin/test_email_settings.html:16
 msgid ""
 "\n"
 "        If you do not see the new test message check your spam folder, and if you don't find it check your SMTP settings\n"
@@ -7774,8 +7774,8 @@ msgid "Updater Settings"
 msgstr "更新设置"
 
 #: forum_modules/updates/settings.py:8
-msgid "OSQA Update Checker Settings."
-msgstr "OSQA更新设置"
+msgid "PODPORA Update Checker Settings."
+msgstr "PODPORA更新设置"
 
 #: forum_modules/updates/settings.py:12
 msgid "Check for updates"
@@ -7784,10 +7784,10 @@ msgstr "检查更新"
 #: forum_modules/updates/settings.py:12
 msgid ""
 "\n"
-"Use the OSQA update server recieve notifications about the latest updates.\n"
+"Use the PODPORA update server recieve notifications about the latest updates.\n"
 msgstr ""
 "\n"
-"使用OSQA更新服务器来接受关于最新更新的通知。\n"
+"使用PODPORA更新服务器来接受关于最新更新的通知。\n"
 
 #: forum_modules/updates/urls.py:8
 msgid "updater/"
@@ -7807,8 +7807,8 @@ msgid "Checking for updates"
 msgstr "正在检查更新"
 
 #: forum_modules/updates/templates/index.html:41
-msgid "Use the OSQA update server to check for updates"
-msgstr "在OSQA更新服务器上检查更新"
+msgid "Use the PODPORA update server to check for updates"
+msgstr "在PODPORA更新服务器上检查更新"
 
 #: forum_modules/updates/templates/index.html:46
 msgid "Check for Updates"

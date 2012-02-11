@@ -8,7 +8,7 @@ from django.utils.version import get_svn_revision
 
 from forum.modules import get_modules_script_implementations
 
-OSQA_VERSION = "Development Build"
+PODPORA_VERSION = "Development Build"
 
 SVN_REVISION = get_svn_revision(djsettings.SITE_SRC_ROOT)
 
@@ -25,7 +25,7 @@ NODE_MAN_FILTERS = Setting('NODE_MAN_FILTERS', [])
 APP_URL = djsettings.APP_URL
 APP_BASE_URL = djsettings.APP_BASE_URL
 FORCE_SCRIPT_NAME = djsettings.FORCE_SCRIPT_NAME
-OSQA_SKIN = djsettings.OSQA_DEFAULT_SKIN
+PODPORA_SKIN = djsettings.PODPORA_DEFAULT_SKIN
 LANGUAGE_CODE = djsettings.LANGUAGE_CODE
 ADMIN_MEDIA_PREFIX = djsettings.ADMIN_MEDIA_PREFIX
 ONLINE_USERS = Setting('ONLINE_USERS', {})
@@ -59,6 +59,6 @@ for k,v in get_modules_script_implementations('settings', BaseSetting).items():
         exec "%s = v" % k
 
 
-BADGES_SET = SettingSet('badges', _('Badges config'), _("Configure badges on your OSQA site."), 500)
+BADGES_SET = SettingSet('badges', _('Badges config'), _("Configure badges on your PODPORA site."), 500)
 
 

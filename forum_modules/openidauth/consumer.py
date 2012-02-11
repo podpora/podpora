@@ -16,7 +16,7 @@ from openid.extensions.sreg import SRegRequest, SRegResponse
 from openid.extensions.ax import FetchRequest as AXFetchRequest, AttrInfo, FetchResponse as AXFetchResponse
 from django.utils.translation import ugettext as _
 
-from store import OsqaOpenIDStore
+from store import PodporaOpenIDStore
 
 class OpenIdAbstractAuthConsumer(AuthenticationConsumer):
 
@@ -53,7 +53,7 @@ class OpenIdAbstractAuthConsumer(AuthenticationConsumer):
         ):
             raise InvalidAuthentication('i-names are not supported')
 
-        consumer = Consumer(request.session, OsqaOpenIDStore())
+        consumer = Consumer(request.session, PodporaOpenIDStore())
 
         try:
             auth_request = consumer.begin(user_url)
@@ -94,7 +94,7 @@ class OpenIdAbstractAuthConsumer(AuthenticationConsumer):
         return auth_request.redirectURL(trust_root, redirect_to)
 
     def process_authentication_request(self, request):
-        consumer = Consumer(request.session, OsqaOpenIDStore())
+        consumer = Consumer(request.session, PodporaOpenIDStore())
 
         query_dict = dict([
             (smart_unicode(k), smart_unicode(v)) for k, v in request.GET.items()

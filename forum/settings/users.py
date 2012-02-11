@@ -4,7 +4,7 @@ from django.forms.widgets import RadioSelect
 from base import Setting, SettingSet
 from django.utils.translation import ugettext as _
 
-USERS_SET = SettingSet('users', _('Users settings'), _("General settings for the OSQA users."), 20)
+USERS_SET = SettingSet('users', _('Users settings'), _("General settings for the PODPORA users."), 20)
 
 ALLOW_NEGATIVE_REPUTATION = Setting('ALLOW_NEGATIVE_REPUTATION', True, USERS_SET, dict(
 label = _("Allow negative reputation"),

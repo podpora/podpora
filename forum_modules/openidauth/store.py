@@ -14,7 +14,7 @@ from django.conf import settings
 
 from models import OpenIdNonce as Nonce, OpenIdAssociation as Association
 
-class OsqaOpenIDStore(OpenIDStore):
+class PodporaOpenIDStore(OpenIDStore):
     def __init__(self):
         self.max_nonce_age = 6 * 60 * 60 # Six hours
 

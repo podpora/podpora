@@ -47,7 +47,7 @@ def admin_page_wrapper(fn, request, *args, **kwargs):
         return res
 
     template, context = res
-    context['basetemplate'] = settings.DJSTYLE_ADMIN_INTERFACE and "osqaadmin/djstyle_base.html" or "osqaadmin/base.html"
+    context['basetemplate'] = settings.DJSTYLE_ADMIN_INTERFACE and "podporaadmin/djstyle_base.html" or "podporaadmin/base.html"
     context['allsets'] = Setting.sets
     context['othersets'] = sorted(
             [s for s in Setting.sets.values() if not s.name in
@@ -95,7 +95,7 @@ class ActivityPaginatorContext(pagination.PaginatorContext):
 
 @admin_page
 def dashboard(request):
-    return ('osqaadmin/dashboard.html', pagination.paginated(request, ("recent_activity", ActivityPaginatorContext()), {
+    return ('podporaadmin/dashboard.html', pagination.paginated(request, ("recent_activity", ActivityPaginatorContext()), {
     'settings_pack': unicode(settings.SETTINGS_PACK),
     'statistics': get_statistics(),
     'recent_activity': get_recent_activity(),
@@ -134,7 +134,7 @@ def statistics(request):
     for i, d in enumerate(last_month_users)
     ])
 
-    return 'osqaadmin/statistics.html', {
+    return 'podporaadmin/statistics.html', {
     'graphs': [
             {
             'id': 'questions_graph',
@@ -190,7 +190,7 @@ def settings_set(request, set_name):
     else:
         form = SettingsSetForm(set, unsaved=current_preview)
 
-    return 'osqaadmin/set.html', {
+    return 'podporaadmin/set.html', {
     'form': form,
     'markdown': set.markdown,
     }
@@ -348,13 +348,13 @@ def maintenance(request):
         form = MaintenanceModeForm(initial={'ips': request.META['REMOTE_ADDR'],
                                             'message': _('Currently down for maintenance. We\'ll be back soon')})
 
-    return ('osqaadmin/maintenance.html', {'form': form, 'in_maintenance': settings.MAINTAINANCE_MODE.value is not None
+    return ('podporaadmin/maintenance.html', {'form': form, 'in_maintenance': settings.MAINTAINANCE_MODE.value is not None
                                            })
 
 
 @moderation_page
 def flagged_posts(request):
-    return ('osqaadmin/flagged_posts.html', {
+    return ('podporaadmin/flagged_posts.html', {
     'flagged_posts': get_flagged_posts(),
     })
 
@@ -362,7 +362,7 @@ def flagged_posts(request):
 def static_pages(request):
     pages = Page.objects.all()
 
-    return ('osqaadmin/static_pages.html', {
+    return ('podporaadmin/static_pages.html', {
     'pages': pages,
     })
 
@@ -400,7 +400,7 @@ def edit_page(request, id=None):
     else:
         published = False
 
-    return ('osqaadmin/edit_page.html', {
+    return ('podporaadmin/edit_page.html', {
     'page': page,
     'form': form,
     'published': published
@@ -434,7 +434,7 @@ def create_user(request):
     else:
         form = CreateUserForm()
 
-    return ('osqaadmin/createuser.html', {
+    return ('podporaadmin/createuser.html', {
         'form': form,
     })
 
@@ -565,7 +565,7 @@ def node_management(request):
 
     node_types = [(k, n.friendly_name) for k, n in NodeMetaClass.types.items()]
 
-    return ('osqaadmin/nodeman.html', pagination.paginated(request, ("nodes", NodeManagementPaginatorContext()), {
+    return ('podporaadmin/nodeman.html', pagination.paginated(request, ("nodes", NodeManagementPaginatorContext()), {
     'nodes': nodes,
     'text': text,
     'text_in': text_in,
@@ -584,10 +584,10 @@ def node_management(request):
 def test_email_settings(request):
     user = request.user
 
-    send_template_email([user,], 'osqaadmin/mail_test.html', { 'user' : user })
+    send_template_email([user,], 'podporaadmin/mail_test.html', { 'user' : user })
 
     return render_to_response(
-        'osqaadmin/test_email_settings.html',
+        'podporaadmin/test_email_settings.html',
         { 'user': user, },
         RequestContext(request)
     )

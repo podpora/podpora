@@ -45,16 +45,16 @@ msgid "Comment by %(cauthor)s on %(pauthor)s's %(qora)s"
 msgstr "Коментар от %(cauthor)s на %(pauthor)s %(qora)s"
 
 #: forum/feed.py:103 forum/models/answer.py:5
-#: forum/skins/default/templates/osqaadmin/dashboard.html:24
-#: forum/skins/default/templates/osqaadmin/index.html:26
+#: forum/skins/default/templates/podporaadmin/dashboard.html:24
+#: forum/skins/default/templates/podporaadmin/index.html:26
 #: forum/skins/default/templates/question_list/item.html:15
 #: forum/views/writers.py:260 forum_modules/akismet/startup.py:76
 msgid "answer"
 msgstr "отговор"
 
 #: forum/feed.py:103 forum/models/question.py:17
-#: forum/skins/default/templates/osqaadmin/dashboard.html:19
-#: forum/skins/default/templates/osqaadmin/index.html:21
+#: forum/skins/default/templates/podporaadmin/dashboard.html:19
+#: forum/skins/default/templates/podporaadmin/index.html:21
 #: forum/views/writers.py:91 forum_modules/akismet/startup.py:75
 msgid "question"
 msgstr "въпрос"
@@ -908,7 +908,7 @@ msgid "Escaped"
 msgstr ""
 
 #: forum/forms/admin.py:75
-#: forum/skins/default/templates/osqaadmin/nodeman.html:285
+#: forum/skins/default/templates/podporaadmin/nodeman.html:285
 msgid "Title"
 msgstr "Заглавие"
 
@@ -1194,7 +1194,7 @@ msgstr ""
 
 #: forum/forms/qanda.py:286
 #: forum/skins/default/templates/account_settings.html:21
-#: forum/skins/default/templates/osqaadmin/moderation.html:69
+#: forum/skins/default/templates/podporaadmin/moderation.html:69
 msgid "Profile"
 msgstr "Профил"
 
@@ -1314,7 +1314,7 @@ msgid "Badges config"
 msgstr "Настройка на значките"
 
 #: forum/settings/__init__.py:51
-msgid "Configure badges on your OSQA site."
+msgid "Configure badges on your PODPORA site."
 msgstr ""
 
 #: forum/settings/accept.py:5
@@ -1368,7 +1368,7 @@ msgstr ""
 "Дали обикновените потребители могат да се приемат собствените си отговори"
 
 #: forum/settings/basic.py:9
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:67
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:67
 msgid "Basic settings"
 msgstr "Основни настройки"
 
@@ -1602,7 +1602,7 @@ msgstr ""
 
 #: forum/settings/form.py:5
 #, fuzzy
-msgid "General settings for the OSQA forms."
+msgid "General settings for the PODPORA forms."
 msgstr "Поздрави от Zapprotect Q&A"
 
 #: forum/settings/form.py:8
@@ -2358,7 +2358,7 @@ msgid "Users settings"
 msgstr "Потребителски настройки"
 
 #: forum/settings/users.py:7
-msgid "General settings for the OSQA users."
+msgid "General settings for the PODPORA users."
 msgstr "Общни настройки за потребителите."
 
 #: forum/settings/users.py:10
@@ -3609,7 +3609,7 @@ msgstr "Аз съм Човек"
 
 #: forum/skins/default/templates/opensearch.html:4
 #: forum/skins/default/templates/opensearch.html:5
-#: forum/skins/default/templates/osqaadmin/nodeman.html:276
+#: forum/skins/default/templates/podporaadmin/nodeman.html:276
 msgid "Search"
 msgstr "Търсене"
 
@@ -4791,658 +4791,658 @@ msgid ""
 "\"%(question_title)s\" and tagged %(question_tags)s:\n"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/base.html:5
+#: forum/skins/default/templates/podporaadmin/base.html:5
 #, fuzzy
 msgid "Site Administration"
 msgstr "администрация"
 
-#: forum/skins/default/templates/osqaadmin/base.html:15
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:22
-msgid "OSQA administration area"
+#: forum/skins/default/templates/podporaadmin/base.html:15
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:22
+msgid "PODPORA administration area"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/base.html:29
+#: forum/skins/default/templates/podporaadmin/base.html:29
 msgid "Switch to django style interface"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/base.html:30
+#: forum/skins/default/templates/podporaadmin/base.html:30
 msgid "Administration menu"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/base.html:42
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:130
-#: forum/skins/default/templates/osqaadmin/maintenance.html:5
-#: forum/skins/default/templates/osqaadmin/maintenance.html:6
+#: forum/skins/default/templates/podporaadmin/base.html:42
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:130
+#: forum/skins/default/templates/podporaadmin/maintenance.html:5
+#: forum/skins/default/templates/podporaadmin/maintenance.html:6
 msgid "Maintenance mode"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/base.html:43
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:131
-#: forum/skins/default/templates/osqaadmin/flagged_posts.html:6
-#: forum/skins/default/templates/osqaadmin/flagged_posts.html:7
-#: forum/skins/default/templates/osqaadmin/flagged_posts.html:13
+#: forum/skins/default/templates/podporaadmin/base.html:43
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:131
+#: forum/skins/default/templates/podporaadmin/flagged_posts.html:6
+#: forum/skins/default/templates/podporaadmin/flagged_posts.html:7
+#: forum/skins/default/templates/podporaadmin/flagged_posts.html:13
 msgid "Flagged Posts"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/createuser.html:7
+#: forum/skins/default/templates/podporaadmin/createuser.html:7
 #, fuzzy
 msgid "Create User"
 msgstr "Парола <i>(напишете отново)</i>"
 
-#: forum/skins/default/templates/osqaadmin/createuser.html:10
+#: forum/skins/default/templates/podporaadmin/createuser.html:10
 #, fuzzy
 msgid "Quick creation of a new user"
 msgstr "answer"
 
-#: forum/skins/default/templates/osqaadmin/createuser.html:18
-#: forum/skins/default/templates/osqaadmin/edit_page.html:26
-#: forum/skins/default/templates/osqaadmin/nodeman.html:399
-#: forum/skins/default/templates/osqaadmin/set.html:17
+#: forum/skins/default/templates/podporaadmin/createuser.html:18
+#: forum/skins/default/templates/podporaadmin/edit_page.html:26
+#: forum/skins/default/templates/podporaadmin/nodeman.html:399
+#: forum/skins/default/templates/podporaadmin/set.html:17
 #: forum/skins/default/templates/users/preferences.html:26
 #, fuzzy
 msgid "Save"
 msgstr "Запази промените"
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:7
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:42
-#: forum/skins/default/templates/osqaadmin/index.html:7
-#: forum/skins/default/templates/osqaadmin/statistics.html:25
-#: forum/skins/default/templates/osqaadmin/statistics.html:26
+#: forum/skins/default/templates/podporaadmin/dashboard.html:7
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:42
+#: forum/skins/default/templates/podporaadmin/index.html:7
+#: forum/skins/default/templates/podporaadmin/statistics.html:25
+#: forum/skins/default/templates/podporaadmin/statistics.html:26
 msgid "Dashboard"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:10
-#: forum/skins/default/templates/osqaadmin/index.html:10
-msgid "Welcome to the OSQA administration area."
+#: forum/skins/default/templates/podporaadmin/dashboard.html:10
+#: forum/skins/default/templates/podporaadmin/index.html:10
+msgid "Welcome to the PODPORA administration area."
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:16
+#: forum/skins/default/templates/podporaadmin/dashboard.html:16
 msgid "Quick statistics"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:19
-#: forum/skins/default/templates/osqaadmin/dashboard.html:24
-#: forum/skins/default/templates/osqaadmin/index.html:21
-#: forum/skins/default/templates/osqaadmin/index.html:26
+#: forum/skins/default/templates/podporaadmin/dashboard.html:19
+#: forum/skins/default/templates/podporaadmin/dashboard.html:24
+#: forum/skins/default/templates/podporaadmin/index.html:21
+#: forum/skins/default/templates/podporaadmin/index.html:26
 msgid "in the last 24 hours"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:29
-#: forum/skins/default/templates/osqaadmin/index.html:31
+#: forum/skins/default/templates/podporaadmin/dashboard.html:29
+#: forum/skins/default/templates/podporaadmin/index.html:31
 msgid "user"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:29
-#: forum/skins/default/templates/osqaadmin/index.html:31
+#: forum/skins/default/templates/podporaadmin/dashboard.html:29
+#: forum/skins/default/templates/podporaadmin/index.html:31
 msgid "joined in the last 24 hours"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:36
-#: forum/skins/default/templates/osqaadmin/index.html:37
+#: forum/skins/default/templates/podporaadmin/dashboard.html:36
+#: forum/skins/default/templates/podporaadmin/index.html:37
 msgid "Site status"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:40
-#: forum/skins/default/templates/osqaadmin/index.html:42
+#: forum/skins/default/templates/podporaadmin/dashboard.html:40
+#: forum/skins/default/templates/podporaadmin/index.html:42
 msgid ""
 "Your site is running in bootstrap mode, click the button below to revert to "
 "defaults."
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:43
-#: forum/skins/default/templates/osqaadmin/index.html:45
+#: forum/skins/default/templates/podporaadmin/dashboard.html:43
+#: forum/skins/default/templates/podporaadmin/index.html:45
 msgid ""
 "Your site is running in standard mode, click the button below to run in "
 "bootstrap mode."
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:45
-#: forum/skins/default/templates/osqaadmin/index.html:47
+#: forum/skins/default/templates/podporaadmin/dashboard.html:45
+#: forum/skins/default/templates/podporaadmin/index.html:47
 msgid ""
 "Your site is running with some customized settings, click the buttons below "
 "to run with defaults or in bootstrap mode"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:49
-#: forum/skins/default/templates/osqaadmin/index.html:51
+#: forum/skins/default/templates/podporaadmin/dashboard.html:49
+#: forum/skins/default/templates/podporaadmin/index.html:51
 msgid "Are you sure you want to revert to the defaults?"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:49
-#: forum/skins/default/templates/osqaadmin/index.html:51
+#: forum/skins/default/templates/podporaadmin/dashboard.html:49
+#: forum/skins/default/templates/podporaadmin/index.html:51
 msgid "revert to defaults"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:52
-#: forum/skins/default/templates/osqaadmin/index.html:54
+#: forum/skins/default/templates/podporaadmin/dashboard.html:52
+#: forum/skins/default/templates/podporaadmin/index.html:54
 msgid "Are you sure you want to run bootstrap mode?"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:52
-#: forum/skins/default/templates/osqaadmin/index.html:54
+#: forum/skins/default/templates/podporaadmin/dashboard.html:52
+#: forum/skins/default/templates/podporaadmin/index.html:54
 msgid "go bootstrap"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/dashboard.html:66
-#: forum/skins/default/templates/osqaadmin/index.html:71
+#: forum/skins/default/templates/podporaadmin/dashboard.html:66
+#: forum/skins/default/templates/podporaadmin/index.html:71
 msgid "Recent activity"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:29
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:29
 msgid "Administration Area"
 msgstr "Административна Зона"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:33
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:33
 msgid "Welcome,"
 msgstr "Добре дошли,"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:35
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:35
 msgid "To standard interface"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:36
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:36
 #, fuzzy
 msgid "Back to home page"
 msgstr "обратно на началната страница"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:37
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:37
 #, fuzzy
 msgid "Log out"
 msgstr "Изход"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:41
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:41
 msgid "Home"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:59
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:59
 msgid "Unpublished changes"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:62
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:62
 msgid "Items marked with this icon have unpublished changes."
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:78
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:78
 msgid "Workflow settings"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:88
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:88
 msgid "Forum settings"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:96
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:96
 #, fuzzy
 msgid "Static content"
 msgstr "съдържание"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:98
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:98
 #, fuzzy
 msgid "Custom Pages"
 msgstr "Тагове"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:104
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:108
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:112
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:122
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:104
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:108
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:112
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:122
 msgid "Unsaved changes"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:117
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:117
 #, fuzzy
 msgid "Other settings"
 msgstr "Опции за оторизиране"
 
-#: forum/skins/default/templates/osqaadmin/djstyle_base.html:128
+#: forum/skins/default/templates/podporaadmin/djstyle_base.html:128
 msgid "Tools"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/edit_page.html:5
-#: forum/skins/default/templates/osqaadmin/edit_page.html:8
+#: forum/skins/default/templates/podporaadmin/edit_page.html:5
+#: forum/skins/default/templates/podporaadmin/edit_page.html:8
 #, fuzzy
 msgid "Editing page"
 msgstr "Редактирай отговора"
 
-#: forum/skins/default/templates/osqaadmin/edit_page.html:7
+#: forum/skins/default/templates/podporaadmin/edit_page.html:7
 msgid "Static Pages"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/edit_page.html:8
+#: forum/skins/default/templates/podporaadmin/edit_page.html:8
 #, fuzzy
 msgid "Creating page"
 msgstr "текуща страница"
 
-#: forum/skins/default/templates/osqaadmin/edit_page.html:11
-#: forum/skins/default/templates/osqaadmin/static_pages.html:12
+#: forum/skins/default/templates/podporaadmin/edit_page.html:11
+#: forum/skins/default/templates/podporaadmin/static_pages.html:12
 #, fuzzy
 msgid "New page"
 msgstr "следваща страница"
 
-#: forum/skins/default/templates/osqaadmin/edit_page.html:12
+#: forum/skins/default/templates/podporaadmin/edit_page.html:12
 msgid "Published"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/edit_page.html:12
+#: forum/skins/default/templates/podporaadmin/edit_page.html:12
 msgid "Unpublished"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/edit_page.html:24
-#: forum/skins/default/templates/osqaadmin/static_pages.html:21
+#: forum/skins/default/templates/podporaadmin/edit_page.html:24
+#: forum/skins/default/templates/podporaadmin/static_pages.html:21
 #, fuzzy
 msgid "Edit"
 msgstr "редактирай"
 
-#: forum/skins/default/templates/osqaadmin/edit_page.html:29
+#: forum/skins/default/templates/podporaadmin/edit_page.html:29
 msgid "Unpublish"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/edit_page.html:31
+#: forum/skins/default/templates/podporaadmin/edit_page.html:31
 msgid "Publish"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/flagged_posts.html:8
+#: forum/skins/default/templates/podporaadmin/flagged_posts.html:8
 msgid "This are the posts that have been flagged by users."
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:17
+#: forum/skins/default/templates/podporaadmin/index.html:17
 msgid "Site statistics"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:65
+#: forum/skins/default/templates/podporaadmin/index.html:65
 msgid "Recalculate scores and reputation"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:66
+#: forum/skins/default/templates/podporaadmin/index.html:66
 msgid "This is a heavy operation, are you sure?"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/index.html:66
+#: forum/skins/default/templates/podporaadmin/index.html:66
 msgid "Recalculate"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/mail_test.html:11
+#: forum/skins/default/templates/podporaadmin/mail_test.html:11
 #, fuzzy, python-format
 msgid "%(prefix)s Your email settings are correct: %(app_name)s"
 msgstr "%(prefix)s Добре дошли на %(app_name)s"
 
-#: forum/skins/default/templates/osqaadmin/mail_test.html:14
-#: forum/skins/default/templates/osqaadmin/mail_test.html:18
+#: forum/skins/default/templates/podporaadmin/mail_test.html:14
+#: forum/skins/default/templates/podporaadmin/mail_test.html:18
 msgid "If you see this content your E-Mail settings are correct."
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/maintenance.html:7
+#: forum/skins/default/templates/podporaadmin/maintenance.html:7
 msgid ""
 "Maintainance mode allows you to close your site for maintainance, allowing "
 "only a predetermined set of ip addresses to access it normally."
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/maintenance.html:13
+#: forum/skins/default/templates/podporaadmin/maintenance.html:13
 msgid "Your site is currently running on maintenance mode."
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/maintenance.html:14
+#: forum/skins/default/templates/podporaadmin/maintenance.html:14
 msgid "You can adjust the settings bellow"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/maintenance.html:20
+#: forum/skins/default/templates/podporaadmin/maintenance.html:20
 msgid "Adjust settings"
 msgstr "Регулиране на настройките"
 
-#: forum/skins/default/templates/osqaadmin/maintenance.html:21
+#: forum/skins/default/templates/podporaadmin/maintenance.html:21
 #, fuzzy
 msgid "Open site"
 msgstr "Уеб сайт"
 
-#: forum/skins/default/templates/osqaadmin/maintenance.html:23
+#: forum/skins/default/templates/podporaadmin/maintenance.html:23
 msgid "Close for maintenance"
 msgstr "Затвори за поддръжка"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:5
-#: forum/skins/default/templates/osqaadmin/moderation.html:6
+#: forum/skins/default/templates/podporaadmin/moderation.html:5
+#: forum/skins/default/templates/podporaadmin/moderation.html:6
 #, fuzzy
 msgid "Moderation"
 msgstr "Местоположение"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:7
+#: forum/skins/default/templates/podporaadmin/moderation.html:7
 msgid ""
 "These tools allow you to search for undesired behaviours and cheating "
 "patterns."
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:14
+#: forum/skins/default/templates/podporaadmin/moderation.html:14
 msgid "Verify:"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:17
+#: forum/skins/default/templates/podporaadmin/moderation.html:17
 msgid "highest ranking users"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:18
+#: forum/skins/default/templates/podporaadmin/moderation.html:18
 #, fuzzy
 msgid "newer users"
 msgstr "най-новите"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:19
+#: forum/skins/default/templates/podporaadmin/moderation.html:19
 #, fuzzy
 msgid "older users"
 msgstr "най-старите"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:20
+#: forum/skins/default/templates/podporaadmin/moderation.html:20
 msgid "users with these ids"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:24
+#: forum/skins/default/templates/podporaadmin/moderation.html:24
 msgid "(Comma separated list of user ids)"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:26
-#: forum/skins/default/templates/osqaadmin/nodeman.html:423
+#: forum/skins/default/templates/podporaadmin/moderation.html:26
+#: forum/skins/default/templates/podporaadmin/nodeman.html:423
 msgid "Go"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:51
+#: forum/skins/default/templates/podporaadmin/moderation.html:51
 msgid "Possible cheaters"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:57
-#: forum/skins/default/templates/osqaadmin/moderation.html:70
+#: forum/skins/default/templates/podporaadmin/moderation.html:57
+#: forum/skins/default/templates/podporaadmin/moderation.html:70
 #, fuzzy
 msgid "Email"
 msgstr ""
 "<strong>Your Email</strong> (<i>must be valid, never shown to others</i>)"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:59
-#: forum/skins/default/templates/osqaadmin/moderation.html:83
+#: forum/skins/default/templates/podporaadmin/moderation.html:59
+#: forum/skins/default/templates/podporaadmin/moderation.html:83
 #, fuzzy
 msgid "Validated"
 msgstr "обновено"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:61
-#: forum/skins/default/templates/osqaadmin/moderation.html:85
+#: forum/skins/default/templates/podporaadmin/moderation.html:61
+#: forum/skins/default/templates/podporaadmin/moderation.html:85
 msgid "Not validated"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:64
+#: forum/skins/default/templates/podporaadmin/moderation.html:64
 #, fuzzy
 msgid "Reputation:"
 msgstr "karma"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:71
+#: forum/skins/default/templates/podporaadmin/moderation.html:71
 #, fuzzy
 msgid "Reputation"
 msgstr "karma"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:72
+#: forum/skins/default/templates/podporaadmin/moderation.html:72
 msgid "Affecting actions"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:73
+#: forum/skins/default/templates/podporaadmin/moderation.html:73
 msgid "Cross ips"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:74
+#: forum/skins/default/templates/podporaadmin/moderation.html:74
 #, fuzzy
 msgid "Cheating score"
 msgstr "Смяна на паролата"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:77
+#: forum/skins/default/templates/podporaadmin/moderation.html:77
 #, fuzzy
 msgid "Possible fake accounts"
 msgstr "Изтрий профила"
 
-#: forum/skins/default/templates/osqaadmin/moderation.html:90
-#: forum/skins/default/templates/osqaadmin/moderation.html:91
+#: forum/skins/default/templates/podporaadmin/moderation.html:90
+#: forum/skins/default/templates/podporaadmin/moderation.html:91
 #, fuzzy
 msgid "out of"
 msgstr "Излез сега"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:73
+#: forum/skins/default/templates/podporaadmin/nodeman.html:73
 msgid "rep"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:102
+#: forum/skins/default/templates/podporaadmin/nodeman.html:102
 #, fuzzy
 msgid "uses"
 msgstr "потребители"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:261
+#: forum/skins/default/templates/podporaadmin/nodeman.html:261
 #, fuzzy
 msgid "Node manager"
 msgstr "най-старите"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:264
+#: forum/skins/default/templates/podporaadmin/nodeman.html:264
 msgid "Nodes bulk management"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:278
+#: forum/skins/default/templates/podporaadmin/nodeman.html:278
 msgid "reset text filter"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:290
+#: forum/skins/default/templates/podporaadmin/nodeman.html:290
 msgid "Body"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:295
+#: forum/skins/default/templates/podporaadmin/nodeman.html:295
 msgid "Title and Body"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:325
+#: forum/skins/default/templates/podporaadmin/nodeman.html:325
 #, fuzzy
 msgid "Filter"
 msgstr "сребро"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:325
+#: forum/skins/default/templates/podporaadmin/nodeman.html:325
 msgid "Click to show/hide"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:327
+#: forum/skins/default/templates/podporaadmin/nodeman.html:327
 msgid "By type"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:330
+#: forum/skins/default/templates/podporaadmin/nodeman.html:330
 msgid "click to clear the type filter"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:330
+#: forum/skins/default/templates/podporaadmin/nodeman.html:330
 msgid "all"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:333
-#: forum/skins/default/templates/osqaadmin/nodeman.html:344
+#: forum/skins/default/templates/podporaadmin/nodeman.html:333
+#: forum/skins/default/templates/podporaadmin/nodeman.html:344
 msgid "click to remove from the filter"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:333
-#: forum/skins/default/templates/osqaadmin/nodeman.html:344
+#: forum/skins/default/templates/podporaadmin/nodeman.html:333
+#: forum/skins/default/templates/podporaadmin/nodeman.html:344
 msgid "click to add to the filter"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:338
+#: forum/skins/default/templates/podporaadmin/nodeman.html:338
 msgid "By state"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:341
+#: forum/skins/default/templates/podporaadmin/nodeman.html:341
 msgid "click to clear the state filter"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:341
+#: forum/skins/default/templates/podporaadmin/nodeman.html:341
 msgid "any"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:350
+#: forum/skins/default/templates/podporaadmin/nodeman.html:350
 msgid "Match any selected"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:351
+#: forum/skins/default/templates/podporaadmin/nodeman.html:351
 msgid "Match all selected"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:355
+#: forum/skins/default/templates/podporaadmin/nodeman.html:355
 msgid "By author(s)"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:357
+#: forum/skins/default/templates/podporaadmin/nodeman.html:357
 msgid "No users selected, use the box bellow to add users to the filter."
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:367
+#: forum/skins/default/templates/podporaadmin/nodeman.html:367
 msgid "Click on the cross next to a user name to remove it from the filter."
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:371
+#: forum/skins/default/templates/podporaadmin/nodeman.html:371
 #, fuzzy
 msgid "By tag(s)"
 msgstr "тагове"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:373
+#: forum/skins/default/templates/podporaadmin/nodeman.html:373
 msgid "No tags selected, use the box bellow to add tags to the filter."
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:383
+#: forum/skins/default/templates/podporaadmin/nodeman.html:383
 msgid "Click on the cross next to a tag name to remove it from the filter."
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:387
+#: forum/skins/default/templates/podporaadmin/nodeman.html:387
 msgid "Pre defined"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:389
+#: forum/skins/default/templates/podporaadmin/nodeman.html:389
 msgid "There are no saved filters. Click bellow to add."
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:398
+#: forum/skins/default/templates/podporaadmin/nodeman.html:398
 #, fuzzy
 msgid "Filter name..."
 msgstr "потребителско име"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:399
+#: forum/skins/default/templates/podporaadmin/nodeman.html:399
 msgid "Click to save the current filter"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:402
+#: forum/skins/default/templates/podporaadmin/nodeman.html:402
 msgid "Show"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:406
+#: forum/skins/default/templates/podporaadmin/nodeman.html:406
 msgid "Refresh"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:414
+#: forum/skins/default/templates/podporaadmin/nodeman.html:414
 #, fuzzy
 msgid "Action"
 msgstr "Местоположение"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:417
+#: forum/skins/default/templates/podporaadmin/nodeman.html:417
 msgid "Mark deleted"
 msgstr "Отбележи като изтрит"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:418
+#: forum/skins/default/templates/podporaadmin/nodeman.html:418
 msgid "Undelete"
 msgstr "Премахни изтриването"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:419
+#: forum/skins/default/templates/podporaadmin/nodeman.html:419
 msgid "Delete completely"
 msgstr "Окончателно изтриване"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:420
+#: forum/skins/default/templates/podporaadmin/nodeman.html:420
 msgid "Close (questions only)"
 msgstr "Затвори (само въпроси)"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:423
+#: forum/skins/default/templates/podporaadmin/nodeman.html:423
 msgid "Run the selected action"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:445
+#: forum/skins/default/templates/podporaadmin/nodeman.html:445
 msgid "Type"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:446
+#: forum/skins/default/templates/podporaadmin/nodeman.html:446
 msgid "Summary"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:448
+#: forum/skins/default/templates/podporaadmin/nodeman.html:448
 #, fuzzy
 msgid "State"
 msgstr "заглавие"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:450
+#: forum/skins/default/templates/podporaadmin/nodeman.html:450
 msgid "Author"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:453
+#: forum/skins/default/templates/podporaadmin/nodeman.html:453
 msgid "Added at"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:457
+#: forum/skins/default/templates/podporaadmin/nodeman.html:457
 msgid "Score"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:461
+#: forum/skins/default/templates/podporaadmin/nodeman.html:461
 msgid "Last activity by"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:464
+#: forum/skins/default/templates/podporaadmin/nodeman.html:464
 msgid "Last activity at"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:466
+#: forum/skins/default/templates/podporaadmin/nodeman.html:466
 #: forum_modules/exporter/exporter.py:344
 #: forum_modules/exporter/importer.py:420
 #, fuzzy
 msgid "Tags"
 msgstr "тагове"
 
-#: forum/skins/default/templates/osqaadmin/nodeman.html:495
+#: forum/skins/default/templates/podporaadmin/nodeman.html:495
 msgid "by"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/set.html:19
+#: forum/skins/default/templates/podporaadmin/set.html:19
 msgid "Preview"
 msgstr "Преглед"
 
-#: forum/skins/default/templates/osqaadmin/set.html:21
+#: forum/skins/default/templates/podporaadmin/set.html:21
 msgid "Reset Changes"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/static_pages.html:5
-#: forum/skins/default/templates/osqaadmin/static_pages.html:6
+#: forum/skins/default/templates/podporaadmin/static_pages.html:5
+#: forum/skins/default/templates/podporaadmin/static_pages.html:6
 msgid "Static pages"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/static_pages.html:7
+#: forum/skins/default/templates/podporaadmin/static_pages.html:7
 msgid "Allows you to create a set of static pages"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/static_pages.html:10
+#: forum/skins/default/templates/podporaadmin/static_pages.html:10
 msgid "Select page to edit"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/static_pages.html:16
+#: forum/skins/default/templates/podporaadmin/static_pages.html:16
 #, fuzzy
 msgid "Pages"
 msgstr "Точки"
 
-#: forum/skins/default/templates/osqaadmin/static_pages.html:23
+#: forum/skins/default/templates/podporaadmin/static_pages.html:23
 msgid "Are you sure you want to delete this page?"
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/static_pages.html:24
+#: forum/skins/default/templates/podporaadmin/static_pages.html:24
 #, fuzzy
 msgid "Delete"
 msgstr "изтрий"
 
-#: forum/skins/default/templates/osqaadmin/statistics.html:27
+#: forum/skins/default/templates/podporaadmin/statistics.html:27
 msgid ""
 "Some simple graphics to help you get a notion of whats going on in your site."
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/test_email_settings.html:4
+#: forum/skins/default/templates/podporaadmin/test_email_settings.html:4
 msgid ""
 "\n"
 "        An attempt has been made to send email to\n"
 "    "
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/test_email_settings.html:10
+#: forum/skins/default/templates/podporaadmin/test_email_settings.html:10
 msgid ""
 "\n"
 "        Please, check your inbox and if you see the new test message your "
@@ -5450,7 +5450,7 @@ msgid ""
 "    "
 msgstr ""
 
-#: forum/skins/default/templates/osqaadmin/test_email_settings.html:16
+#: forum/skins/default/templates/podporaadmin/test_email_settings.html:16
 msgid ""
 "\n"
 "        If you do not see the new test message check your spam folder, and "
@@ -7960,13 +7960,13 @@ msgstr "Потребителски настройки"
 
 #: forum_modules/updater/settings.py:8
 #, fuzzy
-msgid "OSQA Update Checker Settings."
+msgid "PODPORA Update Checker Settings."
 msgstr "Опции за оторизиране"
 
 #: forum_modules/updater/settings.py:12
 msgid ""
 "\n"
-"Use the OSQA update server recieve notifications about the latest updates.\n"
+"Use the PODPORA update server recieve notifications about the latest updates.\n"
 msgstr ""
 
 #: forum_modules/updater/urls.py:8
@@ -7994,7 +7994,7 @@ msgid "Checking for updates"
 msgstr ""
 
 #: forum_modules/updater/templates/index.html:41
-msgid "Use the OSQA update server to check for updates"
+msgid "Use the PODPORA update server to check for updates"
 msgstr ""
 
 #: forum_modules/updater/templates/index.html:46
@@ -8035,7 +8035,7 @@ msgstr ""
 #~ msgid "okay, let's try!"
 #~ msgstr "добре, ще опитам"
 
-#~ msgid "no OSQA community email please, thanks"
+#~ msgid "no PODPORA community email please, thanks"
 #~ msgstr "не искам имейли от Zapprotect"
 
 #~ msgid "please choose one of the options above"
@@ -8587,7 +8587,7 @@ msgstr ""
 #~ msgstr "Verification Email from Q&A forum"
 
 #~ msgid "first time greeting with %(url)s"
-#~ msgstr "Hello and welcome to OSQA - <a href='%(url)s'>please join us</a>!"
+#~ msgstr "Hello and welcome to PODPORA - <a href='%(url)s'>please join us</a>!"
 
 #~ msgid ""
 #~ "\n"

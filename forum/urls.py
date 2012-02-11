@@ -6,14 +6,14 @@ from django.conf.urls.defaults import *
 from django.conf import settings as djsettings
 from django.contrib import admin
 from forum import views as app
-from forum.sitemap import OsqaSitemap
+from forum.sitemap import PodporaSitemap
 from django.utils.translation import ugettext as _
 import logging
 
 admin.autodiscover()
 
 sitemaps = {
-    'questions': OsqaSitemap
+    'questions': PodporaSitemap
 }
 
 APP_PATH = os.path.dirname(__file__)
@@ -39,7 +39,7 @@ core_urls = (
     url(r'^favicon\.ico$', app.meta.favicon),
     url(r'^cstyle\.css$', app.meta.custom_css, name='custom_css'),
     
-    url(r'^m/(?P<skin>\w+)/media/(?P<path>.*)$', app.meta.media , name='osqa_media'),
+    url(r'^m/(?P<skin>\w+)/media/(?P<path>.*)$', app.meta.media , name='podpora_media'),
     url(r'^%s(?P<path>.*)$' % _('upfiles/'), 'django.views.static.serve', {'document_root': os.path.join(APP_PATH, 'upfiles').replace('\\', '/')}, name='uploaded_file',),
     
     url(r'^%s$' % _('faq/'), app.meta.static, {'content': settings.FAQ_PAGE_TEXT, 'title': _('FAQ')}, name='faq'),

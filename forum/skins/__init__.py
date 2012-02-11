@@ -104,7 +104,7 @@ class SkinsTemplateLoader(BaseTemplateLoader):
             else:
                 return None
 
-        for skin in (settings.OSQA_DEFAULT_SKIN, DEFAULT_SKIN_NAME):
+        for skin in (settings.PODPORA_DEFAULT_SKIN, DEFAULT_SKIN_NAME):
             file_name = os.path.join(SKINS_FOLDER, skin, SKIN_TEMPLATES_FOLDER, name)
 
             if os.path.exists(file_name):
@@ -119,7 +119,7 @@ def find_media_source(url):
     """returns url prefixed with the skin name
     of the first skin that contains the file 
     directories are searched in this order:
-    settings.OSQA_DEFAULT_SKIN, then 'default', then 'commmon'
+    settings.PODPORA_DEFAULT_SKIN, then 'default', then 'commmon'
     if file is not found - returns None
     and logs an error message
     """
@@ -130,9 +130,9 @@ def find_media_source(url):
     f = os.path.isfile
     skins = n(j(d(d(__file__)),'skins'))
     try:
-        media = os.path.join(skins, settings.OSQA_DEFAULT_SKIN, url)
+        media = os.path.join(skins, settings.PODPORA_DEFAULT_SKIN, url)
         assert(f(media))
-        use_skin = settings.OSQA_DEFAULT_SKIN
+        use_skin = settings.PODPORA_DEFAULT_SKIN
     except:
         try:
             media = j(skins, 'default', url)

@@ -5,12 +5,12 @@ from django.utils.translation import ugettext_lazy as _
 
 from base import generate_installation_key
 
-UPDATER_SET = SettingSet('updater', _('Updater Settings'), _("OSQA Update Checker Settings."), 100)
+UPDATER_SET = SettingSet('updater', _('Updater Settings'), _("PODPORA Update Checker Settings."), 100)
 
 CHECK_FOR_UPDATES = Setting('CHECK_FOR_UPDATES', True, UPDATER_SET, dict(
 label = "Check for updates",
 help_text = _("""
-Use the OSQA update server recieve notifications about the latest updates.
+Use the PODPORA update server recieve notifications about the latest updates.
 """),
 required=False))
 

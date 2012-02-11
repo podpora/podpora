@@ -10,9 +10,9 @@ to enable this, install sphinx search engine and djangosphinx
 configure sphinx, sample configuration can be found in
 sphinx/sphinx.conf file usually goes somewhere in /etc tree
 
-build osqa index first time manually
+build podpora index first time manually
 
-% indexer --config /path/to/sphinx.conf --index osqa
+% indexer --config /path/to/sphinx.conf --index podpora
 
 setup cron job to rebuild index periodically with command
 your crontab entry may be something like
